@@ -26,7 +26,7 @@ This runs the required command to install snakemake and the python. No version i
 
 2.1) sh run_single.sh
 
-** THIS WILL ONLY RUN ON THE ERI HARDWARE **
+*** THIS WILL ONLY RUN ON THE ERI HARDWARE ***
 
 This runs the Snakmake workflow, submitting jobs one after another to the queue. The workflow completes succesfully, with 12 files created in ./results. This is the expected behaviour of the workflow.
 
