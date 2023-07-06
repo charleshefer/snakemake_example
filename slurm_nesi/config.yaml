@@ -1,15 +1,13 @@
 #slurm profile
 cluster:
-    mkdir -p logs/{rule}/ &&
-    sbatch
+    sbatch -A
         --cpus-per-task={threads}
         --mem={resources.mem_mb}
         --time={resources.time}
         --job-name=smk-{rule}
         --parsable
-        --output=logs/{rule}/{jobid}.out
-        --error=logs/{rule}/{jobid}.err
-       --partition=compute
+       --partition=large
+       --account=ga03187
 #       --gres=gpu:{resources.gpu}
 default-resources:
   - mem_mb=2000
