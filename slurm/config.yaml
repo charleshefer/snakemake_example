@@ -1,14 +1,11 @@
 #slurm profile
 cluster:
-    mkdir -p logs/{rule}/ &&
     sbatch
         --cpus-per-task={threads}
         --mem={resources.mem_mb}
         --time={resources.time}
         --job-name=smk-{rule}
         --parsable
-        --output=logs/{rule}/{jobid}.out
-        --error=logs/{rule}/{jobid}.err
        --partition=compute
 #       --gres=gpu:{resources.gpu}
 default-resources:
