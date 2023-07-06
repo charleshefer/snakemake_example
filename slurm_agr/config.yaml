@@ -9,11 +9,11 @@ cluster:
         --parsable
         --output=logs/{rule}/{jobid}.out
         --error=logs/{rule}/{jobid}.err
-       --partition=compute
+       --partition=inv-blade-g8-fast
 #       --gres=gpu:{resources.gpu}
 default-resources:
   - mem_mb=2000
-  - time=480
+  - time=60
 #  - partition=hpc_general
 #  - gpu=0
 jobs: 1 
