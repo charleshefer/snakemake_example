@@ -14,7 +14,7 @@ default-resources:
   - time=480
 #  - partition=hpc_general
 #  - gpu=0
-jobs: 1 
+jobs: 10 
 latency-wait: 60
 local-cores: 2
 #restart-times: 1
