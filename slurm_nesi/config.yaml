@@ -7,7 +7,7 @@ cluster:
         --job-name=smk-{rule}
         --parsable
        --partition=large
-       --account=ga03187
+       --account=ACCOUNT
 #       --gres=gpu:{resources.gpu}
 default-resources:
   - mem_mb=2000
